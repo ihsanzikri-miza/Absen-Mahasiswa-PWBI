@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard Admin</title>
 <?php
 session_start();
 if (!isset($_SESSION['login'])) {
@@ -5,12 +10,6 @@ if (!isset($_SESSION['login'])) {
     exit;
 }
 ?>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<title>Dashboard Admin</title>
-
 <style>
     * {
         padding: 0;
