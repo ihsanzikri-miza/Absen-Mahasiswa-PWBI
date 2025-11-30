@@ -12,7 +12,6 @@ mysqli_stmt_execute($stmt);
 
 $id_mhs = mysqli_insert_id($conn);
 
-// otomatis buat baris absen (kosong)
 mysqli_query($conn, "INSERT INTO absen (mahasiswa_id) VALUES ($id_mhs)");
 
 $_SESSION['notif'] = "Mahasiswa berhasil ditambahkan!";

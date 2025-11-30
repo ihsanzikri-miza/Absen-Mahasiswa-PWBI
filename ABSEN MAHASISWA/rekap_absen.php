@@ -7,7 +7,6 @@ if (!isset($_SESSION['login'])) {
     exit;
 }
 
-// Ambil data mahasiswa + absen
 $sql = "SELECT m.id, m.nama, m.nim, a.*
         FROM mahasiswa m
         LEFT JOIN absen a ON m.id = a.mahasiswa_id
